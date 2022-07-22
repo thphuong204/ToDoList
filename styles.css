@@ -1,0 +1,148 @@
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    min-height: 600px;
+}
+
+.container>#title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: max(2vw,14px);
+    font-weight: bold;
+}
+
+.container>#toDoList {
+    width: 40%;
+    height: 70%;
+    min-width: 300px;
+    min-height: 500px;
+    border: solid 1px #ff6666 ;
+    background-color: #ff6666;
+    box-shadow: 1px 2px 2px 2px #ff6666;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2% 0px;
+}
+
+.container>#toDoList>.text1 {
+    font-size: max(2vw,16px);
+    font-weight: bold;
+    margin: 0px 10%;
+}
+
+.container>#toDoList>.text2 {
+    font-size: max(1.2vw,14px);
+    margin: 10px 10% 10px 10%;
+    width: 80%;
+}
+
+.container>#toDoList>#items {
+    width: 80%;
+    padding-left: 0px;
+    margin: 0px 10%;
+    min-width: 240px;
+    max-height: 200px;
+    display: flex;
+    align-content:flex-start;
+    flex-wrap: wrap;
+    border-top: solid 3px rgba(255,255,255,0.2);
+    overflow: auto;
+}
+
+.container>#toDoList>#items>.input-group {
+    width: 100%;
+    height: max(10%,20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: #fff;
+    background-color: rgba(255,255,255,0.2);
+    padding: 2%;
+    font-size: max(1.2vw,16px);
+    margin: 10px 0px;
+}
+
+.container>#toDoList>#items>.input-group>.action {
+    display: flex;
+    justify-content: end;
+}
+
+.container>#toDoList>.incompleted-filter {
+    width: 80%;
+    height: 30px;
+    margin: 10px 10%;
+    font-size: max(1.2vw,14px);
+    text-align: right;
+}
+
+.container>#toDoList>form {
+    margin: 0px 10%;
+    width: 80%;
+}
+
+.container>#toDoList>form>label {
+    font-size: max(1.2vw,14px);
+}
+
+.container>#toDoList>form>.addTodo {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.container>#toDoList>form>.addTodo>#new-item {
+    width: 70%;
+    font-size: max(1.2vw,14px);
+    padding: 1% 0px;
+    border: solid 2px rgba(255,255,255,0.2);
+    margin-right: 10px;
+}
+
+.container>#toDoList>form>.addTodo>button {
+    width: 30%;
+    font-size: max(1.2vw,14px);
+    background-color: transparent;
+    border: solid 2px rgba(255,255,255,0.2);
+    color: white;
+    cursor: pointer;
+}
+
+.container>#toDoList>form>.addTodo>button:hover {
+    filter:brightness(120%);
+}
+
+.btn{
+    width: max(1.2vw,20px);
+    height: max(1.2vw,20px);
+    margin: 0px 5px;
+}
+
+.btn-delete {
+    font-size: max(1.2vw,20px);
+    margin: 0px 5px;
+    padding:0px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.hidden {
+    display: none !important;
+}

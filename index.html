@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="title">Project Todo List</div>
+        <div id="toDoList">
+            <div class="text1">Todo List</div>
+            <div class="text2">Get things done, one item at a time</div>
+            <ul id="items">
+                <li class="input-group">
+                    <div class="content">Learn Javascript</div>
+                    <div class="action">
+                        <input type="checkbox" class="btn btn-done">
+                        <button class="btn btn-delete">✖</button>
+                    </div>
+                </li>
+                <li class="input-group">
+                    <div class="content">Code a todo list</div>
+                    <div class="action">
+                        <input type="checkbox" class="btn btn-done">
+                        <button class="btn btn-delete">✖</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="incompleted-filter">
+                <label for="filter">Show incompleted tasks only</label>
+                <input id="filter" type="checkbox" class="btn">
+            </div>
+            <form action="#">
+                <label>Add to the todo list</label>
+                <div class="addTodo">
+                    <input id="new-item" type="text" placeholder="">
+                    <button type="summit">ADD ITEM</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
